@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+/* header section */
+
+header {
+  background-color: rgb(109, 109, 135);
+  padding: 0px 20px;
+  color: #fff;
+  padding-bottom: 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-right: 50px;
+}
+.menubar-icon {
+  display: none;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  /* margin-right:60px; */
+  list-style: none;
+}
+nav ul li a {
+  /* align-items: center; */
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.logo {
+  height: 40px;
+}
+nav .lets-talk {
+  /* margin-left: 50px; */
+  padding: 4px 15px;
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.header-img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.img-left {
+  width: 20vw;
+  margin-right: 50px;
+}
+.header-texts-right h1,
+p,
+input {
+  margin-top: 20px;
+}
+.header-texts-right p {
+  font-size: 1.2rem;
+}
+.email-section {
+  position: relative;
+  width: 100px;
+}
+#email {
+  width: 400px;
+  text-align: left;
+  padding: 10px 130px 10px 50px;
+}
+
+.fa-solid {
+  position: absolute;
+  color: black;
+  top: 51%;
+  left: 2%;
+}
+.email-section .btn-email {
+  background-color: aquamarine;
+  top: -11%;
+  padding: 8px 20px;
+  border: none;
+  position: absolute;
+  right: -294px;
+}
+
+.whole-section {
+  display: flex;
+  flex-direction: column;
+}
+/* section 1  */
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 10px;
+}
+.section-1 h1 {
+  text-align: center;
+}
+.numbers-cols {
+  display: flex;
+  gap: 30px;
+  padding: 40px 0;
+}
+.number-col p {
+  margin-top: 10px;
+}
+.section-1 img {
+  width: 60vw;
+}
+
+/* section 2 */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 10px;
+}
+.section-texts-img {
+  display: flex;
+  margin: 0 50px;
+  margin-top: 40px;
+  gap: 20px;
+}
+.section-main-texts p,
+button {
+  margin-top: 30px;
+}
+.main-img {
+  width: 30vw;
+}
+.section-main-texts .main-btn {
+  background-color: aquamarine;
+  padding: 5px 21px;
+  border: none;
+}
+
+/* section 3,4 */
+
+.section-3 {
+  display: flex;
+  padding: 0 50px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.section-main-texts p,
+button {
+  margin-top: 30px;
+}
+.section-main-texts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* section 5 */
+.section-5 {
+  margin-top: 90px;
+}
+.section-5-row-1 {
+  display: flex;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+.section-5-row-2 {
+  display: flex;
+  padding: 0 50px;
+  gap: 40px;
+}
+.img-sec-5 {
+  width: 15vw;
+}
+.section-5-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* section-6 */
+.section-6 {
+  margin: 50px 0;
+  text-align: center;
+}
+.section-6 button {
+  background-color: aquamarine;
+  padding: 5px 21px;
+  border: none;
+}
+
+/* section footer  */
+
+/* footer logos section  */
+.section-footer {
+  background-color: rgb(33, 33, 42);
+  height: max-content;
+  padding-bottom: 100px;
+}
+.footer-logos-row-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+.icons ul {
+  display: flex;
+  gap: 50px;
+}
+.icons ul li {
+  list-style: none;
+}
+.icons ul li a {
+  color: #fff;
+  height: px;
+}
+.fa-brands {
+  font-size: 30px;
+}
+hr {
+  margin: 20px 70px;
+}
+/* footer-texts-cols  */
+.footer-texts-cols {
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+/* media query section  */
+
+@media screen and (max-width: 963px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav ul li,
+  .btn {
+    display: none;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .menubar-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 50vw;
+    color: #fff;
+  }
+  .header-img-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .section-footer {
+    padding: 50px;
+  }
+  .footer-logos-row-1,
+  .footer-texts-cols {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    width: fit-content;
+  }
+  .icons ul {
+    gap: 15px;
+  }
+  .icons {
+  }
+  hr {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  body{
+    font-size: .7rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 150px;
+    padding: 20px 10px;
+  }
+  .menubar-icon {
+    margin-top: -38px;
+    position: relative;
+    left: 20vw;
+  }
+  .img-left {
+    width: 54vw;
+    margin-right: 50px;
+  }
+  nav,
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    flex-direction: row;
+  }
+  .header-img-section {
+    flex-direction: column;
+  }
+  .email-section {
+    height: max-content;
+    margin-top: 50px;
+  }
+  #email {
+    width: 250px;
+    text-align: left;
+    padding: 10px 35px 10px 8px;
+  }
+  .email-section .btn-email {
+    background-color: aquamarine;
+    top: -11%;
+    padding: 8px 1px;
+    border: none;
+    position: absolute;
+    right: -144px;
+  }
+  header {
+    width: 100vw;
+    padding: 0 10px 50px 30px;
+  }
+  .header-img-section {
+    width: 90vw;
+  }
+  input {
+    width: 261px;
+    text-align: left;
+    padding: 10px 19px 10px 28px;
+  }
+  .section-1 {
+    margin-left: 10vw;
+  }
+  .numbers-cols {
+    flex-direction: column;
+    line-height: 10px;
+    gap: 10px;
+  }
+  .number-col {
+    margin-top: 40px;
+  }
+  .section-texts-img {
+    flex-direction: column;
+  }
+  .main-img {
+    width: 57vw;
+  }
+  .section-3 {
+    flex-direction: column;
+  }
+  .section-2 h1 {
+    width: 75vw;
+  }
+  .section-5-row-1 {
+    flex-direction: column;
+  }
+  .section-5-row-2 {
+    flex-direction: column;
+  }
+  .img-sec-5 {
+    width: 37vw;
+  }
+}
+@media screen and (max-width:320px) {
+  .btn-email{
+    margin: 75px;
+  }
+  #email{
+    width: 222px;
+    padding: 7px 20px;
+  }
+}
+
+
